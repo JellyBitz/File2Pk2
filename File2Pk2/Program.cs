@@ -72,18 +72,15 @@ namespace File2Pk2
                         // This file belons to this .pk2
                         if (filePk2Path != null)
                         {
+                            // Check if the file exists as requirement to be overridden
+                            if (mOverrideOnly && pk2.GetFile(filePk2Path) == null)
+                                continue;
+
                             // Open pk2 when it's required
                             if (pk2 == null)
                             {
                                 pk2 = new Pk2Stream(pk2Path, mPk2Key);
                                 Console.WriteLine($"Importing files into {Path.GetFileName(pk2Path)}..." + Environment.NewLine);
-                            }
-
-                            // Check if the file exists as requirement to be override
-                            if (mOverrideOnly)
-                            {
-                                if(pk2.GetFile(filePk2Path) == null)
-                                    continue;
                             }
 
                             // Load file and add it
