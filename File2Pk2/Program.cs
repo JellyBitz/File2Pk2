@@ -74,7 +74,10 @@ namespace File2Pk2
                         {
                             // Open pk2 when it's required
                             if (pk2 == null)
+                            {
                                 pk2 = new Pk2Stream(pk2Path, mPk2Key);
+                                Console.WriteLine($"Importing files into {Path.GetFileName(pk2Path)}..." + Environment.NewLine);
+                            }
 
                             // Check if the file exists as requirement to be override
                             if (mOverrideOnly)
