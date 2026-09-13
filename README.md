@@ -8,7 +8,7 @@ All this with just drag and drop the folder into the application.
 - `GFXFileManager.dll` is not required
 
 ### Usage
-Put the application inside the client path and just drag and drop the file(s) you want to import into the application.  
+Put the application inside the client path and just drag and drop the file you want to import into the application.  
 
 Or use the command line to make your setup quicker:
 ```
