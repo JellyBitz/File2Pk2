@@ -17,6 +17,7 @@ File2Pk2 "-client=C:\Games\Silkroad\" "-key=169841"
 
 `-client=` : Path to the client to import the folder  
 `-key=` : Encryption key used by the .pk2 file  
+`--override-only` : Confirm the file needs to exists before importing  
 
 ---
 > #### Thanks!
